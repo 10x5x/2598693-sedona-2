@@ -121,6 +121,7 @@ body {
 
 .subscribe {
   background-color: #756157;
+  background-image: url("/images/subscribe-backgroud.png");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -128,7 +129,6 @@ body {
 
 .subscribe-main {
   color: #ffffff;
-  background-image: url("/images/subscribe-backgroud.png");
 }
 
 .subscribe-catalog .title {
