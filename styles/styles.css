@@ -127,7 +127,7 @@ body {
 
 .subscribe-main {
   color: #ffffff;
-  background-image: url("/images/subscribe-background.jpg");
+  background-image:url("../images/subscribe-background.jpg")
 }
 
 .subscribe-catalog .title {
