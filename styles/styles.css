@@ -82,11 +82,8 @@ html {
   justify-content: space-between;
 }
 .box-wrap {
-  width: 400px;
-    box-sizing: border-box;
-    min-height: 385px;
     color: #ffffff;
-
+    padding: 102px 85px;
 }
 .nav-logo {
   display: block;
@@ -153,6 +150,7 @@ html {
   text-transform: uppercase;
   color: inherit;
   width: 100%;
+  max-width: 175px;
 }
 
 .advantages-item-text {
@@ -163,7 +161,7 @@ html {
   min-height: 385px;
   color: #ffffff;
   box-sizing: border-box;
-  width: 400px;
+  display: flex;
 }
 
 .advantages-description {
@@ -174,10 +172,15 @@ html {
 
 .advantages-light {
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  height: 385px;
+  list-style: none;
 }
-
 .advantages-dark {
   background-color: rgba(131, 179, 211, 0.2);
+  width: 400px;
+  height: 385px;
+  list-style: none;
 }
 
 .subscribe {
@@ -329,8 +332,8 @@ html {
 
 .button-secondary {
   background-color: #756157;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 36px;
   padding: 8px 34px;
   margin-left: 20px;
 }
@@ -363,8 +366,51 @@ html {
 .advantages {
   display: flex;
  flex-wrap: wrap;
+}
 
+.advantages-dark-white {
+  list-style: none;
+  width: 400px;
+  height: 385px;
+}
+.box-wrap-reverse{
+  order: 1;
+ padding: 102px 85px;
+}
+.service-list {
+  display: flex;
+}
+.subscribe-form {
+ display: flex;
+ justify-content: center;
+}
+.service-item {
+  width: 400px;
+  height: 385px;
+  padding: 81px 85px;
+  background-color: #f0f5f9;
+  list-style: none;
+}
+.hotels-list {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+.breadcrumbs-item {
 
 }
-li.advantages-item{
+.breadcrumbs {
+
+}
+.filter {
+ display: flex;
+}
+.box-wrap-light {
+  padding: 112px 83px;
+}
+.box-wrap-dark {
+  padding: 112px 83px;
+}
+.hotel-card{
+
 }
