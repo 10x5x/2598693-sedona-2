@@ -22,7 +22,9 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
+  background-color: #F2F2F2;
 }
+
 .page-container {
    display: flex;
   flex-direction: column;
@@ -34,8 +36,9 @@ body {
   }
  .page-header {
   display: flex;
-  padding: 0 70px;
- }
+  width: 1200px;
+  height: 64px;
+}
 
   .reasons {
     color: #333333;
@@ -80,19 +83,21 @@ html {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding-right: 70px;
 }
 .box-wrap {
     color: #ffffff;
     padding: 102px 85px;
 }
 .nav-logo {
-  display: block;
+
   position: relative;
   inline-size: 140px;
   margin-bottom: -6px;
+  margin-left: 70px;
 }
 .logo-img {
- display: block;
+
 }
 
 .nav-link {
@@ -188,11 +193,13 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  padding: 96px 0 104px;
 }
 
 .subscribe-main {
   color: #ffffff;
-  background-image:url("../images/subscribe-background.jpg")
+  background-image:url("../images/subscribe-background.jpg");
+
 }
 
 .subscribe-catalog .title {
@@ -204,6 +211,9 @@ html {
   font-size: 18px;
   line-height: 24px;
   background-color: #f2f2f2;
+  width: 452px;
+  height: 52px;
+  border: none;
 }
 
 .social-list {
@@ -223,12 +233,13 @@ html {
   background-image: url("../images/filter-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-
+  padding: 35px 70px 70px 70px;
 }
 
 .catalog-title {
   font-size: 60px;
   line-height: 78px;
+  margin: 0 0 8px;
 }
 
 .breadcrumbs-link {
@@ -238,6 +249,10 @@ html {
 
 .filter-list {
   list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .filter-title {
@@ -326,8 +341,9 @@ html {
 
 .button-primary {
   background-color: #82b3d3;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
+  width: 232px;
 }
 
 .button-secondary {
@@ -336,6 +352,8 @@ html {
   line-height: 36px;
   padding: 8px 34px;
   margin-left: 20px;
+  width: 376px;
+  margin-bottom: 96px;
 }
 
 .button-added {
@@ -387,7 +405,6 @@ html {
 .service-item {
   width: 400px;
   height: 385px;
-  padding: 81px 85px;
   background-color: #f0f5f9;
   list-style: none;
 }
@@ -400,7 +417,7 @@ gap: 20px;
 
 }
 .breadcrumbs {
-
+  display: flex;
 }
 .filter {
  display: flex;
@@ -413,4 +430,39 @@ gap: 20px;
 }
 .hotel-card{
 
+}
+.reasons-text {
+  color: #ffffff;
+  margin: 0 0 54px;
+}
+.user-link.button {
+padding: 8px 34px;
+margin-left: 20px;
+font-size: 16px;
+}
+.main-catalog {
+  display: flex;
+  flex-direction: column;
+}
+.hotels-navigation {
+  display: flex;
+}
+.filter-group{
+  border: none;
+}
+.filter-button-wrapper{
+
+}
+.control {
+font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.filter-input {
+ display: flex;
+}
+.input-wrapper {
+  position: relative;
 }
