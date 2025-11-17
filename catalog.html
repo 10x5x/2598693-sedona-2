@@ -23,19 +23,19 @@
           <li class="nav-item">
             <a class="nav-link" href="#">О Cедоне</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item-current">
             <a class="nav-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
 
         <ul class="user-list">
           <li class="user-item">
-            <a class="user-link" href="#">
+            <a class="user-link search-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="user-item">
-            <a class="user-link nav-link" href="#">
+            <a class="user-link heart-link" href="#">
               <span class="visually-hidden">Отелей в избранном</span>
               <span>12</span>
             </a>
@@ -86,7 +86,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter-group">
-            <legend class="filter-title">Тип жилья:</legend>
+            <legend class="filter-title">Тип Жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
                 <label class="control" for="hotel">
@@ -109,19 +109,21 @@
             </ul>
           </fieldset>
           <fieldset class="filter-group">
+            <div class="price-regular">
             <legend class="filter-title">Стоимость, ₽:</legend>
             <div class="filter-input">
               <div class="input-wrapper">
                 <label class="filter-item-label" for="min-price">от</label>
-                <input class="filter-item-input" type="number" name="min-price" id="min-price" min="0" value="0">
+                <input class="filter-item-input input-min"type="number" name="min-price" id="min-price" min="0" value="0">
               </div>
               <div class="input-wrapper">
                 <label class="filter-item-label" for="max-price">до</label>
-                <input class="filter-item-input" type="number" name="max-price" id="max-price" min="0" value="9000">
+                <input class="filter-item-input input-max" type="number" name="max-price" id="max-price" min="0" value="9000">
               </div>
             </div>
             <div class="ranger-controls">
               <div class="bar">
+                <div class="ranger-track"> </div>
                 <span class="visually-hidden">Диапазон цены</span>
               </div>
               <button class="ranger-toggle ranger-toggle-min" type="button"></button>
@@ -130,6 +132,7 @@
               <button class="ranger-toggle ranger-toggle-max" type="button"></button>
               <span class="visually-hidden">Изменить максимальную стоимость</span>
           </button>
+            </div>
             </div>
           </fieldset>
 
@@ -275,7 +278,7 @@
         </ul>
       </section>
 
-      <section class="subscribe subscribe-main">
+      <section class="subscribe subscribe-catalog">
         <h2 class="title">Подпишитесь на рассылку</h2>
         <p class="reasons-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
