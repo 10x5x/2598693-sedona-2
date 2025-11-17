@@ -390,7 +390,6 @@ html {
     border-radius: 4px;
     min-height: 37px;
     width: 140px;
-    height: 37px;
 }
 
 
@@ -922,8 +921,10 @@ max-width: 290px;
   font-size: 24px;
     margin: 0;
     background-size: 1em auto;
-    background-repeat: space;
-    background-position: top 9px left 0;
+    background-repeat: round;
+    height: 17px;
+    margin-top: 10px;
+
 }
 .four-stars{
 width: 4em
