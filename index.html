@@ -49,19 +49,18 @@
       </nav>
     </header>
 
-    <main class="main-index">
-      <section class="hero">
+    <main class="main-index" data-test="main">
+      <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Сайт города Седона</h1>
         <img class="welcome-img" src="images/welcome.svg" width="458" height="352" lang="en"
           alt="Welcome to the gorgeous Sedona 'Because the Grand Canyon sucks!">
       </section>
 
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <div class="advantages-text">
         <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </div>
-        </p>
         <ul class="advantages-list">
           <li class="advantages-item advantages-item-wide">
             <div class="box-wrap">
@@ -99,7 +98,7 @@
         </ul>
       </section>
 
-      <section class="service">
+      <section class="service" data-test="service">
         <div class="service-text">
         <h2 class="title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="reasons">Опытный персонал и качественное обслуживание!</p>
@@ -120,14 +119,14 @@
         </ul>
       </section>
 
-      <section class="search">
+      <section class="search" data-test="search" id="search">
         <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-reasons">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <button class="search-button button button-secondary" type="submit">Поиск гостиницы в Седоне</button>
       </section>
 
-      <section class="subscribe subscribe-main">
+      <section class="subscribe subscribe-main" data-test="subscribe">
         <h2 class="title">Подпишитесь на рассылку</h2>
         <p class="reasons-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
@@ -139,7 +138,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
           <a class="social-icon icon-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
@@ -166,6 +165,69 @@
       </a>
     </footer>
     </div>
+  </body>
+
+  <div class="modal modal-closed">
+        <div class="modal-content">
+          <section>
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-form modal-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="modal-form-field-group modal-form-field-date">
+                <label class="modal-form-label" for="arrival-date">Дата заезда:</label>
+                <div class="modal-form-input-date-wrapper">
+                  <input class="modal-form-input modal-form-input-date" type="text" name="arrival-date"
+                    id="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
+                  <span class="modal-form-text modal-form-text-error">Мы не можем отправить вас в прошлое.</span>
+                </div>
+              </div>
+              <div class="modal-form-field-group modal-form-field-date">
+                <label class="modal-form-label" for="leave-date">Дата выезда:</label>
+                <div class="modal-form-input-date-wrapper">
+                  <input class="modal-form-input modal-form-input-date" type="text" name="leave-date" id="leave-date"
+                    value="1 сентября 2023" placeholder="Укажите дату" required>
+                  <span class="modal-form-text">На эти даты есть свободные номера. Пока есть.</span>
+                </div>
+              </div>
+              <div class="modal-form-field-group ">
+                <label class="modal-form-label" for="adults">Взрослые:</label>
+                <div class="modal-counter">
+                  <button class="counter-button counter-minus" type="button">
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+                  <input class="modal-counter-input" type="number" name="adults" id="adults" value="2" placeholder="2">
+                  <button class="counter-button counter-plus" type="button">
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-form-field-group">
+                <label class="modal-form-label" for="children-field">Дети:</label>
+                <span class="modal-form-tooltip">
+                  <button class="tooltip-toggle" type="button" aria-label="Информация о детях"
+                    aria-labelledby="tooltip-label">
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые
+                    будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                <div class="modal-counter">
+                  <button class="counter-button counter-minus" type="button">
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+                  <input class="modal-counter-input" type="number" name="children-count" id="children-field" value="2"
+                    placeholder="2">
+                  <button class="counter-button counter-plus" type="button">
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
+                </div>
+              </div>
+              <button class="modal-submit-button button button-primary" type="submit">Найти</button>
+            </form>
+            <button class="modal-close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </section>
+        </div>
+      </div>
   </body>
 
 </html>
